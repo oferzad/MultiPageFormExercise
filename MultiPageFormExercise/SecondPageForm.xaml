@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MultiPageFormExercise.SecondPageForm"
+             Title="Student Signup (2)">
+    <ContentPage.Content>
+        <StackLayout>
+            
+            <Label Text="Class:"/>
+            <Entry Text="{Binding Class}"/>
+            <Label Text="Class Number:"/>
+            <Entry Text="{Binding ClassNumber}"/>
+            <Label Text="Like Math:"/>
+            <Switch IsToggled="{Binding LikeMath}"/>
+            <Label Text="Like Computer Sceince:"/>
+            <Switch IsToggled="{Binding LikeCS}"/>
+
+
+            <Button Text="Summary" x:Name="Summary" Clicked="Summary_Clicked" VerticalOptions="EndAndExpand"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

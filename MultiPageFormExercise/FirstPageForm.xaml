@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MultiPageFormExercise.FirstPageForm"
+             Title="Student Signup (1)">
+    <ContentPage.Content>
+        <StackLayout>
+            
+            <Label Text="Student Name:"/>
+            <Entry Text="{Binding Name}"/>
+            <Label Text="Student Address:"/>
+            <Entry Text="{Binding Address}"/>
+            <Label Text="Student Birth Date:"/>
+            <DatePicker x:Name="startDatePicker"
+                    Format="D"
+                    Date="{Binding BirthDate}" />
+            <Button Text="Next Page" x:Name="NextPage" Clicked="NextPage_Clicked" VerticalOptions="EndAndExpand"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

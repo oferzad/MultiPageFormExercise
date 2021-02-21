@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MultiPageFormExercise.SummaryPage"
+             Title="Student Signup (Summary)">
+    <ContentPage.Content>
+        <StackLayout>
+            
+            <Label Text="Student Name:"/>
+            <Label Text="{Binding Name}"/>
+            <Label Text="Student Address:"/>
+            <Label Text="{Binding Address}"/>
+            <Label Text="Student Birth Date:"/>
+            <Label Text="{Binding BirthDate}" />
+            <Label Text="Class:"/>
+            <Label Text="{Binding Class}"/>
+            <Label Text="Class Number:"/>
+            <Label Text="{Binding ClassNumber}"/>
+            <Label Text="Like Math:"/>
+            <Switch IsToggled="{Binding LikeMath}" IsEnabled="False"/>
+            <Label Text="Like Computer Sceince:" />
+            <Switch IsToggled="{Binding LikeCS}" IsEnabled="False"/>
+            <Button Text="Save" x:Name="Save" Clicked="Save_Clicked" VerticalOptions="EndAndExpand"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

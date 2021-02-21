@@ -7,7 +7,7 @@ namespace MultiPageFormExercise
     public class Student
     {
         public string Name { get; set; }
-        public string Adress { get; set; }
+        public string Address { get; set; }
         public string Class { get; set; }
         public int ClassNumber { get; set; }
         public DateTime BirthDate { get; set; }
